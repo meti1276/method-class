@@ -1,0 +1,30 @@
+using System;
+
+class MathOperation
+{
+    public void PerformOperation(int num1, int num2)
+    {
+        // Perform a simple mathematical operation on num1 (e.g., multiplication)
+        int result = num1 * 2;
+
+        // Display the result and the second integer
+        Console.WriteLine($"The result of the operation on {num1} is: {result}");
+        Console.WriteLine($"The second integer is: {num2}");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        // Create an instance of the MathOperation class
+        MathOperation mathOp = new MathOperation();
+
+        // Call the PerformOperation method with two integers as parameters
+        int integer1 = 5;
+        int integer2 = 10;
+        mathOp.PerformOperation(integer1, integer2);
+
+        // You can call the method with different integers as needed
+    }
+}
